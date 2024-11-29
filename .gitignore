@@ -1,0 +1,11 @@
+src/node_modules
+terraform/.terraform/
+terraform/tfplan
+terraform/terraform.tfvars
+terraform/.terraform.lock.hcl
+HolaMundoCloudKey.pem
+terraform/terraform.tfstate.backup
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/giovanni-pe/reniecApiSimulation.git
+git push -u origin main
