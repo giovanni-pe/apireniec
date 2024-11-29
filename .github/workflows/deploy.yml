@@ -5,7 +5,7 @@ on:
     branches:
       - main
 env:
-  AWS_REGION: us-east-1
+  AWS_REGION: us-east-2
   EC2_HOST_1: 13.59.245.63
   REPO_URL: https://github.com/giovanni-pe/reniecApiSimulation.git
   
