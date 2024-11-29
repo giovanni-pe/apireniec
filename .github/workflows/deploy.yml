@@ -47,7 +47,7 @@ jobs:
           chmod 600 ec2_key.pem
       - name: Delete previous distribution on EC2  
         run: |
-          ssh -i ec2_key.pem -o StrictHostKeyChecking=no ec2-user@"${{ env.EC2_HOST_2 }}" << 'EOF'
+          ssh -i ec2_key.pem -o StrictHostKeyChecking=no ec2-user@"${{ env.EC2_HOST_1}}" << 'EOF'
             #!/bin/bash
 
             # Stop all running Docker containers
@@ -73,7 +73,7 @@ jobs:
 
       - name: Build and Run Docker Container on EC2
         run: |
-          ssh -i ec2_key.pem -o StrictHostKeyChecking=no ec2-user@"${{ env.EC2_HOST_2 }}" << 'EOF'
+          ssh -i ec2_key.pem -o StrictHostKeyChecking=no ec2-user@"${{ env.EC2_HOST_1 }}" << 'EOF'
             #!/bin/bash
 
             # Clone your Node.js app from the Git repository (replace with your repo)
