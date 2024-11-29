@@ -7,7 +7,7 @@ on:
 env:
   AWS_REGION: us-east-2
   EC2_HOST_1: 13.59.245.63
-  REPO_URL: https://github.com/giovanni-pe/reniecApiSimulation.git
+  REPO_URL: https://github.com/giovanni-pe/apireniec.git
   
 jobs:
   install-dependencies:
@@ -78,7 +78,7 @@ jobs:
 
             # Clone your Node.js app from the Git repository (replace with your repo)
             cd /home/ec2-user
-            git clone https://github.com/giovanni-pe/microservices.git nodeapp
+            git clone https://github.com/giovanni-pe/apireniec.git nodeapp
             cd nodeapp/src
 
             # Build the Docker image
